@@ -9,7 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.mohit.expensetracker.components.ExpensesDayGroup
-import com.mohit.expensetracker.mock.mockExpenses
+import com.mohit.expensetracker.mockExpenses
 import com.mohit.expensetracker.models.Expense
 import com.mohit.expensetracker.models.groupedByDay
 import com.mohit.expensetracker.ui.theme.ExpenseTrackerTheme

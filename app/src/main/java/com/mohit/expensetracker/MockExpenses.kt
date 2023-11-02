@@ -1,4 +1,4 @@
-package com.mohit.expensetracker.mock
+package com.mohit.expensetracker
 
 import androidx.compose.ui.graphics.Color
 import com.mohit.expensetracker.models.Category
