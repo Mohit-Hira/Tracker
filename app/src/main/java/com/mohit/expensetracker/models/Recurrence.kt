@@ -1,5 +1,6 @@
 package com.mohit.expensetracker.models
 
+//recurrence
 sealed class Recurrence(val name: String, val target: String) {
   object None : Recurrence("None", "None")
   object Daily : Recurrence("Daily", "Today")
