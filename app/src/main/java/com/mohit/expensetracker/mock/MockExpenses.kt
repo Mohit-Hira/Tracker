@@ -1,7 +1,5 @@
 package com.mohit.expensetracker.mock
 
-import android.os.Build
-import androidx.annotation.RequiresApi
 import androidx.compose.ui.graphics.Color
 import com.mohit.expensetracker.models.Category
 import com.mohit.expensetracker.models.Expense
@@ -44,12 +42,13 @@ val mockCategories = listOf(
   ),
 )
 
-@RequiresApi(Build.VERSION_CODES.O)
 val mockExpenses: List<Expense> = List(30) {
   Expense(
     amount = faker.random.nextInt(min = 1, max = 999)
       .toDouble() + faker.random.nextDouble(),
-
+    date = LocalDateTime.now().minus(
+      faker.random.nextInt(min = 300, max = 345600).toLong(),
+      ChronoUnit.SECONDS
     ),
     recurrence = faker.random.randomValue(
       listOf(
