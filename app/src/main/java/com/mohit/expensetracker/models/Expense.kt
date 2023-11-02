@@ -5,7 +5,7 @@ import io.realm.kotlin.types.RealmObject
 import io.realm.kotlin.types.annotations.PrimaryKey
 import java.time.LocalDate
 import java.time.LocalDateTime
-
+//expense model
 class Expense(): RealmObject {
   @PrimaryKey
   var _id: ObjectId = ObjectId.create()
