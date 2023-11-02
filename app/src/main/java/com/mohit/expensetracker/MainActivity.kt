@@ -57,6 +57,7 @@ class MainActivity : ComponentActivity() {
                     )
                   }
                 )
+                  //icome button
                 NavigationBarItem(
                   selected = backStackEntry?.destination?.route == "income",
                   onClick = { navController.navigate("income") },
@@ -70,6 +71,7 @@ class MainActivity : ComponentActivity() {
                     )
                   }
                 )
+                  //reports button
                 NavigationBarItem(
                   selected = backStackEntry?.destination?.route == "reports",
                   onClick = { navController.navigate("reports") },
