@@ -459,7 +459,7 @@ fun Categories(
         }
     })
 }
-//Expense
+//Expense Page
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Expenses(
@@ -548,7 +548,7 @@ fun ExpensesPreview() {
         Expenses(navController = rememberNavController())
     }
 }
-//Income
+//Income Page
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Income(
@@ -683,6 +683,7 @@ fun Reports(vm: ReportsViewModel = viewModel()) {
         }
     )
 }
+//Settngs Page
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Settings(navController: NavController) {
